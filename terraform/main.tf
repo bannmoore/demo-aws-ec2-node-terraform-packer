@@ -9,8 +9,8 @@ resource "aws_instance" "bam" {
 
   user_data = <<-EOF
             #!/bin/bash
-            echo "Hello, World" > index.html
-            nohup busybox httpd -f -p "${var.server_port}" &
+            cd /home/ubuntu
+            npm start
             EOF
 
   tags {
@@ -35,7 +35,7 @@ variable "server_port" {
 }
 
 variable "ami" {
-  description = "The AMI used by the ec2 instance"
+  description = "The AMI used by the ec2 instance. This will be output by packer."
   default     = "ami-2757f631"
 }
 
