@@ -9,9 +9,9 @@
       "secret_key": "{{user `aws_secret_access_key`}}",
       "type": "amazon-ebs",
       "region": "us-east-1",
-      "source_ami": "ami-2757f631",
+      "source_ami": "ami-97785bed",
       "instance_type": "t2.micro",
-      "ssh_username": "ubuntu",
+      "ssh_username": "ec2-user",
       "ami_name": "bam-app-{{timestamp}}"
     }
   ],
@@ -19,12 +19,12 @@
     {
       "type": "file",
       "source": "../app.js",
-      "destination": "/home/ubuntu/"
+      "destination": "/home/ec2-user/"
     },
     {
       "type": "file",
       "source": "../package.json",
-      "destination": "/home/ubuntu/"
+      "destination": "/home/ec2-user/"
     },
     {
       "type": "shell",
