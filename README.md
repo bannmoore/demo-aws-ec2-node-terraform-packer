@@ -1,5 +1,7 @@
 # Demo - AWS, Node, Packer, and Terraform
 
+Note: This _particular_ branch does not contain Node or Packer. It's a minimal baseline for running an EC2 instance using Terraform.
+
 ## AWS Credentials
 
 In order to use this repository, you'll need an AWS account (free tier is sufficient) and an AWS access key id and secret key.
