@@ -5,7 +5,7 @@ variable "server_port" {
 
 variable "ami" {
   description = "The AMI used by the ec2 instance"
-  default     = "ami-2757f631"
+  # default     = "" # uncomment and update this value with the ami created by packer
 }
 
 variable "key_pair_name" {
