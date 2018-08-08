@@ -18,12 +18,12 @@
   "provisioners": [
     {
       "type": "file",
-      "source": "../app.js",
+      "source": "../app/app.js",
       "destination": "/home/ec2-user/"
     },
     {
       "type": "file",
-      "source": "../package.json",
+      "source": "../app/package.json",
       "destination": "/home/ec2-user/"
     },
     {
